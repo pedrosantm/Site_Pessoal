@@ -8,7 +8,7 @@
 :root{
     --branco: #fff;
     --cinza: #969494;
-    --cor_1: #341d42;
+    --cor_1: #16091f;
     --cor_2: #0e0115;
     --cor_3: #09020e;
     --cor_4: #08000b;
@@ -16,7 +16,7 @@
 }
 
 body{
-    background-color: var(--cor_2);
+    background-color: var(--cor_1);
     height: 100vh;
     font-family: 'Lato';
 }
@@ -117,10 +117,88 @@ strong{
     width: 100%;
 }
 
-.Experiencias{
-    background-color: var(--cor_2);
-    justify-content: center;
+:is(.Experiencias, .meus_projetos){
+    background-color: var(--cor_1);
     display: flex;
-    border: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 
+.Experiencias > div{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: var(--cinza)
+
+}
+
+.Experiencias p{
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.Experiencias p:hover{
+    color: var(--branco);
+    transition: 0.4s;
+    cursor: default;
+}
+
+.Experiencias h2{
+    color: var(--branco);
+    justify-content: center;
+}
+
+
+.apresentacao{
+    background-color: var(--cor_2);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.apresentacao h2{
+    color: var(--branco);
+}
+.apresentacao > div{
+    display: flex;
+    gap: 4rem;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagem_secundaria{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.apresentacao > div p{
+    max-width: 600px;
+    color: var(--branco);
+    text-align: justify;
+}
+
+.meus_projetos h2{
+    color: var(--branco);
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: var(--cor_2);
+}
+
+
+footer div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }

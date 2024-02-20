@@ -187,6 +187,7 @@ strong{
 }
 
 footer{
+    max-height: 50px;
     padding: 4rem;
     display: flex;
     flex-direction: column;

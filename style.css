@@ -219,10 +219,10 @@ strong{
 }
 
 footer{
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     background-color: var(--cor_2);
 }
@@ -231,6 +231,7 @@ footer{
 footer div{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
+    padding: 0.5rem;
     flex-wrap: wrap;
 }

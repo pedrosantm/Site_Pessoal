@@ -117,7 +117,12 @@ strong{
     width: 100%;
 }
 
-.Experiencias{
+.portifolio:hover{
+    color: var(--cinza);
+    transition: 0.4s;
+}
+
+.Competencias{
     background-color: var(--cor_1);
     display: flex;
     flex-direction: column;
@@ -126,7 +131,7 @@ strong{
     gap: 2rem;
 }
 
-.Experiencias > div{
+.Competencias > div{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -136,23 +141,25 @@ strong{
 
 }
 
-.Experiencias p{
-    letter-spacing: 2px;
-    font-weight: bold;
+.Competencias img{
+    gap: 2rem;
 }
 
-.Experiencias p:hover{
+.Competencias p:hover{
     color: var(--branco);
     transition: 0.4s;
     cursor: default;
 }
 
-.Experiencias h2{
+.Competencias h2{
     color: var(--branco);
 }
 
 
 .apresentacao{
+    padding: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
     background-color: var(--cor_2);
     display: flex;
     flex-direction: column;
@@ -161,6 +168,7 @@ strong{
 
 .apresentacao h2{
     color: var(--branco);
+    padding-left: 3rem;
 }
 .apresentacao > div{
     display: flex;
@@ -182,7 +190,7 @@ strong{
 }
 
 
-.meus_projetos{
+.certificados{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,26 +199,9 @@ strong{
 }
 
 
-.meus_projetos > div{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-
-}
-
-.meus_projetos a{
-    text-decoration: none;
-    letter-spacing: 2px;
-    color: var(--cor_destaques);
-    font-weight: bold;
-}
-
-.meus_projetos a:hover{
+.certificados h2{
     color: var(--branco);
-    transition: 0.4s;
-    cursor: pointer;;
+    word-spacing: 0.3rem;
 }
 
 .meus_projetos h2{
@@ -219,7 +210,6 @@ strong{
 }
 
 footer{
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -232,6 +222,7 @@ footer div{
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding: 0.5rem;
     flex-wrap: wrap;
+    color: var(--branco);
 }
+
